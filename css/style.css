@@ -1,0 +1,224 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0; /* 문서의 여백값 0 */
+}
+ul {
+    list-style-type: none; /* no-marker 기호없음 */
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.d-none {
+    display: none;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.damo { color: #604449; }
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+    /* background-image: url("../images/bg.png");
+    background-position: x y;
+    background-repeat: repeat;
+    background-attachment: scroll; 
+    background-color: #fff; */
+    background: #fff url("../images/bg.png") 0 0 repeat scroll;
+    font-family: 'Maven Pro', 'Noto Sans KR', sans-serif; 
+    font-size: 14px;
+    color: #000;
+}
+.header-wrap {
+    width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.header-logo {
+    float: left;
+}
+.header-nav {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+    border-left: 1px solid #000;
+    float: left;
+    margin-left: 80px;
+    padding-left: 20px;
+}
+.header-nav li:hover {
+    color: red;
+}
+.links {
+    float: right;
+}
+.links li {
+    float: left;
+    margin-left: 5px;
+}
+
+.hero {
+    background: url("../images/visual_bg.jpg") no-repeat center/ cover;
+    height: 400px;
+}
+.hero-wrap {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#new {
+    position:absolute;
+    right: 0;
+    bottom: -80px;
+}
+
+/* .article-wrap */
+.article-wrap {
+    max-width: 1000px; /* 반응형 속성 */
+    margin: 100px auto;
+    overflow: hidden;
+}
+.article-wrap article {
+    float: left;
+}
+.article-wrap article:nth-child(1) {
+    width: 681px;
+    overflow: hidden;
+}
+.article-wrap article h2 {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.upper {
+    text-transform: uppercase;
+}
+.theraphy-items li {
+    float: left;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.theraphy-items li:hover {
+    border: 1px solid #604449;
+}
+.theraphy-items li:hover img{
+    transform: scale(1.2); /* 변형:크기(기존대비 약 120%) */
+}
+.theraphy-items li img{
+    transition: all .3s; /* 트랜지션:모든 속성을 0.3초 속도로 */
+}
+.theraphy-items li:hover .overlay {
+    display: block;
+}
+.overlay {
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,.3); /* 검정색 50% */
+    width: 100%; /* 부모요소의 크기에 가득 채움 */
+    height: 100%;
+    z-index: 1000; /* 레이어의 계층 순서-숫자값 클수록 높게 */
+}
+.choice-btns {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.choice-btns div {
+    display: inline-block;
+}
+.cart {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+}
+.cart:hover {
+    border: 2px solid rgba(125,125,0,1);
+}
+.cart:hover .material-icons.md-light{
+    color: rgba(125,125,0,1);
+}
+.buy {
+    
+}
+.theraphy-items li:nth-child(1) { 
+    margin-right: 21px;
+}
+.theraphy-items li:nth-child(2) { 
+    margin-right: 22px;
+}
+/* sample.html > sample_order form */
+
+
+
+
+
+
+/* .aside-wrap */
+.fullwidth-wrap {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    color: black
+}
+.aside-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.aside-wrap::after { /* clearfix 기법 */
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.aside-wrap h3 {
+    float: left;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 50px;
+}
+.aside-wrap p {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+/* .footer-wrap */
+.footer-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.etc {
+    margin: 10px;
+}
+.etc li {
+    display: inline-block;
+    padding: 10px;
+}
+address p{
+    display: inline-block;
+    padding: 5px;
+}
+p.copyright {
+    display: block;
+    padding-top: 30px;
+}
+.footer-logo {
+    position: absolute;
+    right: 0;
+}
+/* .footer {
+    clear: both;
+} */
