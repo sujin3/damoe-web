@@ -12,8 +12,44 @@
     <title>다모애</title>
 </head>
 <body>
-    <h1>form 태그 연습(p.134)</h1>
-    <form name="sample_order"> <!-- method="post" name="sample_form" action="알려부면 쓰는 것(주소/파일)" -->
+    <h1 class="d-none">다모애 테라피 샴푸</h1>
+    <header>
+        <h2 class="d-none">브랜드 로고와 내비게이션</h2> <!-- 시멘틱태그는 제목 추가 필수 -->
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="(주)다모애">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <h3 class="d-none">내비게이션</h3>
+                    <ul>
+                        <li><a href="#">다모애</a></li>
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">샘플신청</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+            </nav>
+            <!-- .links>ul>li*3>a[href=#]>img[src=images/top_icons$.png] -->
+            <div class="links">
+                <ul>
+                    <li><a href="#"><img src="images/top_icon1.png" alt="홈"></a></li>
+                    <li><a href="#"><img src="images/top_icon2.png" alt="메일"></a></li>
+                    <li><a href="#"><img src="images/top_icon3.png" alt="검색"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-wrap">
+            <div id="new">
+                <img src="images/visual_img.png" alt="테라피 골드 샴푸">
+            </div>
+        </div>
+    </div>
+    <!------- form ------->
+    
+    <form name="sample_order"> <!-- method="post" name="sample_form" action="알려주면 쓰는 것(주소/파일)" -->
         <div class="user_inputs">
             <div class="name_field">
                 <label for="user_name">이름</label>
@@ -35,5 +71,31 @@
         <!-- <label for="email">이메일</label> 
         <input type="email" id="email"> -->
     </form>
+    <!------- form ------->
+    <footer>
+        <h2 class="d-none">다모애 웹사이트 저작권 및 연락처, 주소 정보</h2>
+        <div class="footer-wrap">
+            <div class="etc">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </div>
+            <address>
+                <p>상호: 다모애</p>
+                <p>주소 : 광주광역시 서구 경열로 3, 다모애 테라피 연구소</p><br>
+                <p>대표전화 : 062-333-4444</p>
+                <p>개인정보취급관리자 : 홍길동</p>
+                <p>이메일 : cs-center@damoe.com</p>
+                <p class="copyright">copyright&copy; damoe. all rights reserved.</p>
+            </address>
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="images/footer_logo.png" alt="footer-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
