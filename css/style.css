@@ -39,6 +39,11 @@ body {
     font-size: 14px;
     color: #000;
 }
+.side-banner {
+    position: fixed;
+    right: 3%;
+    top: 10%;
+}
 .header-wrap {
     width: 1000px;
     margin: 50px auto;
