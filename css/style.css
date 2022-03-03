@@ -39,6 +39,51 @@ body {
     font-size: 14px;
     color: #000;
 }
+/*============= #modal ==============*/
+#modal.show {/* 스크립트로 show,hide를 제어하기 위한 스타일 */
+    display: block;
+}
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 2000; /* 쌓이는 순서, 값이 클수록 화면의 앞에 위치 */
+    background: rgba(0,0,0,.5); /* Red, Green, Blue, Alpha(0~1) */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.modal-wrap {
+    position: absolute;
+    background: white;
+    width: 1000px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+.close-modal {
+    font-size: 2.5rem;
+    color: #604449;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.modal-title {
+    border-left: 2px solid #666;
+    padding-left: 20px;
+    margin: 50px;
+}
+.modal-title h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.modal-title h4 {
+    font-size: 20px;
+    color: rgb(158, 158, 158);
+}
+/*============= #modal ==============*/
 .side-banner {
     position: fixed;
     right: 3%;
