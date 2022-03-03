@@ -64,6 +64,7 @@ body {
     margin-top: -300px;
 }
 .close-modal {
+    cursor: pointer;
     font-size: 2.5rem;
     color: #604449;
     position: absolute;
